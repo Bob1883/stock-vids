@@ -1,0 +1,264 @@
+.media-player-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.media-player-inner {
+    background-color: #000;
+    height: fit-content;
+    width: 80%;
+    min-height: 300px;
+    position: relative;
+}
+
+.media-player {
+    height: 100%;
+    transition: filter 0.5s ease;
+}
+
+.media-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.play-pause {
+    background-color: transparent;
+    border: none;
+}
+
+.play-pause img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.media-progress-bar {
+    background-color: #cececec3;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    transition: width 0.1s linear;
+}
+
+.media-progress-bar-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    color: #CECECE;
+}
+
+.media-progress-back-container {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.media-progress-back {
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #5a5a64b4;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.media-progress-dot {
+    background-color: #CECECE;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 0;
+    transition: left 0.1s linear;
+}
+
+.media-progress-time {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: end;
+}
+
+.media-progress-time img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.media-settings {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.media-settings img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.media-episode-select {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #CECECE;
+    background-color: #5a5a6451;
+    backdrop-filter: blur(10px);
+}
+
+.media-playback {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.media-backward {
+    background-color: transparent;
+    border: none;
+}
+
+.media-backward img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.media-forward {
+    background-color: transparent;
+    border: none;
+}
+
+.media-forward img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* .media-player {
+    position: absolute;
+} */
+
+@media screen and (max-width: 860px) {
+    .media-player-inner {
+        width: 90%;
+        min-height: 50px;
+        margin: 20px 0 20px 0;
+    }
+
+    .play-pause img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .media-progress-time img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .media-settings img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .media-episode-select {
+        padding: 5px 10px;
+    }
+
+    .media-playback {
+        gap: 20px;
+    }
+
+    .media-backward img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .media-forward img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .media-progress-bar {
+        height: 2px;
+    }
+
+    .media-progress-back {
+        height: 2px;
+    }
+
+    .media-progress-dot {
+        height: 8px;
+        width: 8px;
+    }
+
+    .media-progress-time {
+        gap: 5px;
+    }
+
+    .media-progress-time img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .media-progress-back-container {
+        height: 30px;
+    }
+
+    .media-progress-bar-container {
+        padding: 10px;
+    }
+
+    .media-progress-time {
+        font-size: 0.8rem;
+    }
+
+    .media-progress-back-container {
+        height: 20px;
+    }
+}

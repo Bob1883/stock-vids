@@ -1,0 +1,34 @@
+:root {
+  --background-color: #141115;
+  --primary-color: #ED76FE;
+  --buttom-color: #1C1E24;
+  --primary-text-color: #CECECE;
+  --secondary-text-color: #918F98;
+  --third-text-color: #9B9B9B;
+  --vh-rem: 1rem;
+  --filter: brightness(0) saturate(100%) invert(89%) sepia(31%) saturate(7483%) hue-rotate(245deg) brightness(94%) contrast(114%);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+  font-size: var(--vh-rem);
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-size: calc(2 * var(--vh-rem));
+}
+
+*:focus {
+  outline: 0px none transparent;
+}

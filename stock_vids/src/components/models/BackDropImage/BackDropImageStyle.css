@@ -1,0 +1,225 @@
+.recomended-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.recomended-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 60%, transparent 100%);
+    filter: brightness(0.9);
+    position: absolute;
+}
+
+.recomended-back {
+    mask: none;
+    width: 45px;
+    z-index: 10;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.recomended-info {
+    margin-left: 10%;
+    bottom: 0;
+    margin-bottom: 10%;
+    width: 50vw;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.recomended-title {
+    color: var(--primary-text-color);
+    font-size: 50px;
+    background-color: transparent;
+    letter-spacing: 2px;
+}
+
+.recomended-tags {
+    margin-top: 20px;
+    display: flex;
+    width: auto;
+    background-color: transparent;
+    height: 20px;
+    gap: 30px;
+}
+
+.recomended-quality {
+    height: 100%;
+    width: fit-content;
+    padding: 0 10px 0 10px;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    font-weight: 900;
+    border-radius: 1rem;
+}
+
+.recomended-age {
+    padding: 0 10px 0 10px;
+    background-color: transparent;
+    border: 1.7px solid var(--primary-text-color);
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    font-weight: 900;
+    font-size: 12px;
+    color: var(--primary-text-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.recomended-rating {
+    background-color: transparent;
+    color: var(--primary-text-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.recomended-rating img {
+    background-color: transparent;
+}
+
+.recomended-year {
+    background-color: transparent;
+    color: var(--primary-text-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.recomended-description {
+    margin-top: 20px;
+    width: 100%;
+    background-color: transparent;
+    color: var(--secondary-text-color);
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.recomended-buttons {
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+    background-color: transparent;
+}
+
+.recomended-play {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px;
+    border-radius: 50px;
+    width: 160px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recomended-play-img {
+    margin-right: 10px;
+    height: 100%;
+    background-color: transparent;
+}
+
+.recomended-bookmark {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-text-color);
+    background-color: transparent;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.recomended-bookmark img {
+    background-color: transparent;
+    margin-right: 10px;
+    height: 25px;
+}
+
+.recomended-description-toggle {
+    color: var(--primary-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 860px) {
+    .recomended-img {
+        mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 95%);
+        filter: brightness(0.8);
+        position: absolute;
+    }
+
+    .recomended-buttons {
+        gap: 30px;
+    }
+
+    .recomended-info {
+        margin-left: 5%;
+        margin-bottom: 30%;
+        bottom: 30%;
+        width: 90vw;
+    }
+
+    .recomended-title {
+        font-size: 40px;
+    }
+
+    .recomended-tags {
+        width: fit-content;
+    }
+
+    .recomended-quality {
+        font-size: 12px;
+    }
+
+    .recomended-age {
+        font-size: 12px;
+    }
+
+    .recomended-rating {
+        font-size: 14px;
+    }
+
+    .recomended-year {
+        font-size: 14px;
+    }
+
+    .recomended-description {
+        font-size: 16px;
+    }
+
+    .recomended-play {
+        font-size: 20px;
+        padding: 8px;
+        width: 130px;
+    }
+
+    .recomended-play-img {
+        margin-right: 8px;
+    }
+
+    .recomended-bookmark {
+        font-size: 20px;
+    }
+
+    .recomended-back {
+        margin-top: 25%;
+    }
+
+    .recomended-back img {
+        width: 40px;
+    }
+}

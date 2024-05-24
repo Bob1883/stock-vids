@@ -1,0 +1,159 @@
+.card-container {
+    width: 223px;
+    height: 296px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #5a5a6480;
+}
+
+.card-img {
+    border-radius: 1rem;
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    background-color: #5a5a6480;
+}
+
+.card-content {
+    pointer-events: none;
+    border-radius: 1rem;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    justify-content: space-between;
+}
+
+.card-details {
+    margin-top: 20px;
+}
+
+.card-container:hover .card-content {
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-content p {
+    left: 0;
+}
+
+.card-quality {
+    pointer-events: all;
+    padding: 2px;
+    background-color: var(--primary-color);
+    text-align: center;
+    width: fit-content;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 0 1rem 1rem 0;
+    font-weight: bolder;
+    color: var(--background-color);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.card-rating {
+    pointer-events: all;
+    padding: 2px;
+    backdrop-filter: blur(10px);
+    background-color: #5a5a64bb;
+    text-align: center;
+    width: 40px;
+    border-radius: 0 1rem 1rem 0;
+    font-weight: bolder;
+    color: var(--primary-text-color);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    pointer-events: all;
+    display: none;
+    color: var(--primary-text-color);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-container:hover .card-title {
+    display: block;
+}
+
+.bookmark {
+    pointer-events: all;
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #5a5a64bb;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container:hover .bookmark {
+    display: flex;
+}
+
+@media screen and (max-width: 1350px) {
+    .card-container {
+        width: 200px;
+        height: 266px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-rating {
+        font-size: 0.8rem;
+    }
+
+    .card-quality {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .card-container {
+        width: 150px;
+        height: 200px;
+    }
+
+    .card-title {
+        display: none;
+    }
+
+    .card-container:hover .card-content {
+        backdrop-filter: none;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .card-container:hover .card-title {
+        display: none;
+    }
+
+    .bookmark {
+        display: flex;
+    }
+
+    .card-rating {
+        font-size: 0.6rem;
+    }
+
+    .card-quality {
+        font-size: 0.6rem;
+    }
+}
